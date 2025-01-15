@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Set target to the latest ECMAScript version
+    "module": "ESNext", // Use the ESNext module system
+    "jsx": "preserve", // Preserve JSX syntax in the output (do not transform to React.createElement calls)
+    "strict": true, // Enable strict type-checking options
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "moduleResolution": "node", // Resolve modules the way Node.js does
+    "allowJs": true, // Allow JavaScript files in the project
+    "skipLibCheck": true, // Skip type checking of declaration files for faster build
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file imports
+    "outDir": "./dist", // Output transpiled files to the 'dist' folder
+    "sourceMap": false, // Generate source maps for debugging
+    "declaration": false, // Don't generate declaration files (.d.ts)
+    "noEmit": false, // Emit output files (JSX)
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "noImplicitAny": false,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "hooks/**/*" // Include all files in the hooks directory
+    ,
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules directory
+    "dist" // Exclude the dist directory
+  ]
+}
