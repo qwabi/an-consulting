@@ -7,6 +7,4 @@ const nextConfig = {
   },
 };
 
-mergeConfig(nextConfig, userConfig);
-
 export default nextConfig;
