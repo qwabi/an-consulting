@@ -44,7 +44,7 @@ export async function POST(req) {
     `${result.insertedCount} documents were inserted with the _id: ${result.insertedId}`
   );
 
-  mailOptions.html = `<h1>Hi Axolile,</h1> <p>This is Ayabonga from Namoota, you have received a new call me back request on your website</p> <p>Name: ${data.name}</p> <p>Phone: <a href='tel:${data.cellphoneNumber}'>${data.cellphoneNumber} </a></p>`;
+  mailOptions.html = `<h1>Hi Axolile,</h1> <p>This is Ayabonga from Namoota, you have received a new call me back request on your website</p> <p>Name: ${data.name}</p> <p>Phone: <a href='tel:${data.cellphoneNumber}'>${data.cellphoneNumber} </a> <br/> Email: <a href="mailto:${data.email}">${data.email}</a></a></p>`;
   transporter.sendMail(mailOptions, function (err, info) {
     if (err) {
       console.log(err);
