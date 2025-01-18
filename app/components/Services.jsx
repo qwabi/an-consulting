@@ -26,7 +26,7 @@ const services = [
   {
     title: 'Advisory',
     description:
-      'Strategic financial advice to help your business grow. Featuring Comprehensive accounting services tailored for small businesses. Outsourced accounting services.•	We provide accounting support for small businesses. Are packages are tailored to the needs of start-ups, fairly new and established businesses. We take care of the accounting, giving you time to focus on growing the business.',
+      'Strategic financial advice to help your business grow. Featuring Comprehensive accounting services tailored for small businesses. Outsourced accounting services. We provide accounting support for small businesses. Our packages are tailored to the needs of start-ups, fairly new and established businesses. We take care of the accounting, giving you time to focus on growing the business.',
     icon: TrendingUp,
     image: '/images/advisory.jpg',
   },
