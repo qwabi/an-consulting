@@ -1,4 +1,4 @@
-import clientPromise from '@/util/mongo';
+import clientPromise from '../../../../lib/mongo';
 import { ObjectId } from 'mongodb';
 import { omit } from 'ramda';
 
