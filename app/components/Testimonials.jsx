@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 const testimonials = [
   {
-    name: 'John Doe',
+    name: 'Coby Johnson',
     company: 'Samuel Stevens',
     quote:
       'AN Consulting has been instrumental in streamlining our financial processes. Their expertise is unmatched!',
