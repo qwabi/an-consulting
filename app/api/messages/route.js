@@ -14,7 +14,7 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'namoota.zar@gmail.com',
-  to: 'info@siavistaelectrical.com',
+  to: 'axolile@anconsulting.co.za',
   subject: 'New Website Call Me back',
 };
 // app/api/route.js 👈🏽
