@@ -38,28 +38,11 @@ export default function Hero() {
       </div>
       <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 lg:w-3/5 text-left">
-          <div className="flex items-center gap-6 mb-6">
-            <motion.img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-C3a2VNUHNpEbdqtDeWgyq4esXac3Ra.png"
-              alt="AN Consulting Logo"
-              className="w-16 h-16 rounded-full"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            />
-            <motion.h1
-              className="text-4xl md:text-6xl font-bold text-[#fac420]"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              AN Consulting
-            </motion.h1>
-          </div>
+          
           <AnimatePresence mode="wait">
             <motion.p
               key={currentTagline}
-              className="text-xl md:text-2xl mb-8 text-white"
+              className="mt-10 mb-4 md:mb-2 md:mt-1 text-4xl md:text-6xl font-bold text-[#fac420]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -74,11 +57,12 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Struggling to streamline operations? We've got you covered! Our expert team provides tailored solutions to
-            help your business thrive.
+            Struggling to streamline operations? We've got you covered! Our
+            expert team provides tailored solutions to help your business
+            thrive.
           </motion.p>
           <motion.div
-            className="space-x-4"
+            className="md:space-x-4 flex flex-col md:flex-row gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -104,7 +88,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/team.jpg-Qb7hhp7nz16o3wfVcKZLuAMtBDIPFe.jpeg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-C3a2VNUHNpEbdqtDeWgyq4esXac3Ra.png"
             alt="AN Consulting Team"
             width={500}
             height={333}
@@ -113,6 +97,6 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
 
