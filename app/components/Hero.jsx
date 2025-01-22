@@ -42,7 +42,7 @@ export default function Hero() {
           <AnimatePresence mode="wait">
             <motion.p
               key={currentTagline}
-              className="mt-10 mb-4 md:mb-2 md:mt-1 text-4xl md:text-6xl font-bold text-[#fac420]"
+              className="mt-10 mb-4  md:mt-1 text-4xl md:text-6xl font-bold text-[#fac420]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -52,7 +52,7 @@ export default function Hero() {
             </motion.p>
           </AnimatePresence>
           <motion.p
-            className="text-lg mb-8 text-[#7591a0]"
+            className="text-2xl mb-8 text-[#7591a0]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

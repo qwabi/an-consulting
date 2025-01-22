@@ -164,7 +164,7 @@ export default function Contact() {
               </div>
               <div className="space-y-2">
                 <p className="flex items-center text-[#7591a0]">
-                  <MapPin className="w-5 h-5 mr-2 text-[#fac420]" />5 5 Glastonbury Road, Grahamstown, 6140
+                  <MapPin className="w-5 h-5 mr-2 text-[#fac420]" />5 Glastonbury Road, Grahamstown, 6140
                 </p>
                 <p className="flex items-center text-[#7591a0]">
                   <Phone className="w-5 h-5 mr-2 text-[#fac420]" />
