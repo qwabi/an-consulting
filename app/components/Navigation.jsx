@@ -1,17 +1,17 @@
-"use client";
-import { useState, useEffect } from "react";
-import Link from "next/link";
+"use client"
+import { useState, useEffect } from "react"
+import Link from "next/link"
 export default function Navigation() {
-  const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
+      setIsSticky(window.scrollY > 0)
+    }
+    window.addEventListener("scroll", handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
   return (
     <nav
       className={`fixed w-full z-10 transition-all duration-300 ${
@@ -21,20 +21,14 @@ export default function Navigation() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center justify-center space-x-4">
           <img
-            src="/logo/4.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-C3a2VNUHNpEbdqtDeWgyq4esXac3Ra.png"
             alt="AN Consulting"
-            className="w-10 h-10 mx-auto rounded-full border-4 border-white shadow-lg border-solid "
+            className="w-10 h-10 mx-auto rounded-full shadow-lg border-solid"
           />
           <div className="text-[#fac420] font-bold text-2xl">AN Consulting</div>
         </div>
         <ul className="hidden md:flex space-x-6">
-          {[
-            "About Us",
-            "Services",
-            "Packages",
-            "Testimonials",
-            "Contact Us",
-          ].map((item) => (
+          {["About Us", "Services", "Packages", "Testimonials", "Contact Us"].map((item) => (
             <li key={item}>
               <Link
                 href={`#${item.toLowerCase().replace(" ", "-")}`}
@@ -53,15 +47,11 @@ export default function Navigation() {
             stroke="currentColor"
             className="w-6 h-6"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
     </nav>
-  );
+  )
 }
+
