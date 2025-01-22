@@ -13,7 +13,6 @@ const achievements = [
   { title: "Years of Experience", value: "35+", icon: Briefcase },
   { title: "Satisfied Clients", value: "500+", icon: Users },
   { title: "Projects Completed", value: "1000+", icon: Award },
-  { title: "Industry Awards", value: "20+", icon: Trophy },
 ]
 
 export default function TrustSignals() {
@@ -44,7 +43,7 @@ export default function TrustSignals() {
             </motion.div>
           ))}
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
           {achievements.map((achievement, index) => (
             <motion.div
               key={index}

@@ -16,17 +16,6 @@ const caseStudies = [
     ],
   },
   {
-    title: "Tax Optimization for Lovedale LLC",
-    description:
-      "Our tax planning strategies helped Lovedale LLC  save over R500,000 in taxes while ensuring full compliance with regulations.",
-    image: "/_com3.jpg",
-    results: [
-      "R500,000+ tax savings",
-      "100% compliance with regulations",
-      "Streamlined tax reporting process",
-    ],
-  },
-  {
     title: "Financial Turnaround for Lategan Poultry",
     description:
       "We guided Lategan poultry through a comprehensive financial restructuring, leading to a successful Series B funding round.",

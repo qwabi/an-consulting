@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-[#233142] text-white relative overflow-hidden pt-20"
+      className="relative z-0 min-h-screen flex items-center justify-center bg-[#233142] text-white relative overflow-hidden pt-20"
     >
       <div className="absolute inset-0 z-0">
         <Image
@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#233142] via-[#233142]/70 to-transparent"></div>
       </div>
       <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10 flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 lg:w-3/5 text-left">
+        <div className="w-full text-left">
           
           <AnimatePresence mode="wait">
             <motion.p
@@ -81,20 +81,6 @@ export default function Hero() {
             </Link>
           </motion.div>
         </div>
-        <motion.div
-          className="md:w-1/2 lg:w-2/5 mt-12 md:mt-0"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-C3a2VNUHNpEbdqtDeWgyq4esXac3Ra.png"
-            alt="AN Consulting Team"
-            width={500}
-            height={333}
-            className="rounded-lg shadow-2xl w-full h-auto"
-          />
-        </motion.div>
       </div>
     </section>
   );
