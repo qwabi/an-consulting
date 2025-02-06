@@ -65,13 +65,13 @@ export default function Navigation() {
           </svg>
         </button>
       </div>
-      <div className='bg-red-500 w-full h-10 flex justify-center items-center text-white'>
+      {/* <div className='bg-red-500 w-full h-10 flex justify-center items-center text-white'>
         <p>
           {' '}
           This domain has an unpaid invoice. Please contact domain webmaster at
           www.ayabonga.com
         </p>
-      </div>
+      </div> */}
     </nav>
   );
 }
