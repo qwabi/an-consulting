@@ -1,49 +1,52 @@
-"use client"
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { FileText, PieChart, TrendingUp } from "lucide-react"
-import Link from "next/link"
+'use client';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FileText, PieChart, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 
 const services = [
   {
-    title: "Audit & Assurance",
+    title: 'Audit & Assurance',
     description:
       "Ensure compliance and financial accuracy with our thorough auditing services. We provide comprehensive auditing solutions that help maintain your business's financial integrity.",
     icon: FileText,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/audit.jpg-PFML6JuyjqcuoLJ8mNj6xT3BNoBvBz.jpeg",
+    image:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/audit.jpg-PFML6JuyjqcuoLJ8mNj6xT3BNoBvBz.jpeg',
   },
   {
-    title: "Tax Planning",
+    title: 'Tax Planning',
     description:
-      "Strategic tax planning and preparation services to optimize your financial position. We help you navigate complex tax regulations while maximizing your benefits.",
+      'Strategic tax planning and preparation services to optimize your financial position. We help you navigate complex tax regulations while maximizing your benefits.',
     icon: PieChart,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/planning.jpg-HazfVNpqUoupZNlroKwzyKwkOcXtZM.jpeg",
+    image:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/planning.jpg-HazfVNpqUoupZNlroKwzyKwkOcXtZM.jpeg',
   },
   {
-    title: "Financial Advisory",
+    title: 'Financial Advisory',
     description:
-      "Expert financial guidance to help your business grow and thrive. Our advisory services provide insights and strategies for sustainable business growth.",
+      'Expert financial guidance to help your business grow and thrive. Our advisory services provide insights and strategies for sustainable business growth.',
     icon: TrendingUp,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/advice.jpg-CYUqexmu46jOyh3HrEcbr3ZNva7Aaz.jpeg",
+    image:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/advice.jpg-CYUqexmu46jOyh3HrEcbr3ZNva7Aaz.jpeg',
   },
-]
+];
 
 export default function Services() {
-  const [hoveredIndex, setHoveredIndex] = useState(null)
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section className="py-20 bg-[#f4f7f9]" id="services">
+    <section className='py-20 bg-[#f4f7f9]' id='services'>
       <motion.div
-        className="container mx-auto px-4"
+        className='container mx-auto px-4'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#233142]">
-          Our Services
+        <h2 className='text-3xl md:text-4xl font-bold text-center mb-12 text-[#233142]'>
+          About us
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -85,9 +88,97 @@ export default function Services() {
               </div>
             </motion.div>
           ))}
+        </div> */}
+        <div className='w-full p-6 md:p-4 md:max-w-2xl mx-auto text-lg'>
+          <p>
+            Our team is made up of qualified and experience professionals
+            comprising chartered accountants, registered auditors and other
+            finance professionals. The team is well balanced and experienced
+            with over 35 years combined experience in both the private and
+            public sector. We are passionate about small business and want to
+            play a role to assist them reach their potential and grow. Get in
+            touch with us, we might just be what you are looking for.
+          </p>
+          <h2 className='text-4xl font-bold text-center mt-8 text-[#233142]'>
+            Our services
+          </h2>
+          <p>
+            <ul className='ml-2 p-2'>
+              <li>
+                <span className='text-xl font-bold'>Audit and assurance</span>
+                <ul className='ml-4 p-2'>
+                  <li>External audits</li>
+                  <li>Quality assurance reviews</li>
+                  <li>Agreed upon procedures</li>
+                </ul>
+              </li>
+              <li>
+                <span className='text-xl font-bold'>Tax</span>
+                <ul className='ml-4 p-2'>
+                  <li>
+                    Preparation and review of tax computations and returns
+                  </li>
+                  <li>VAT and other indirect taxes</li>
+                  <li>Tax planning</li>
+                </ul>
+              </li>
+              <li>
+                <span className='text-xl font-bold'>Advisory</span>
+                <ul className='ml-4 p-2'>
+                  <li>
+                    <span className='text-lg font-bold'>
+                      Outsourced accounting services
+                    </span>
+                    <ul className='ml-6 p-2'>
+                      <li>
+                        Monthly outsourced accounting packages
+                        <ul className='ml-6 p-2'>
+                          <li>
+                            We provide accounting support for small businesses.
+                            Are packages are tailored to the needs of start-ups,
+                            fairly new and established businesses. We take care
+                            of the accounting, giving you time to focus on
+                            growing the business.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span className='text-lg font-bold'>Payroll</span>
+                <ul className='ml-4 p-2'>
+                  <li>Outsourced payroll administration</li>
+                </ul>
+              </li>
+              <li>
+                <span className='text-xl font-bold'>Business consulting</span>
+                <ul className='ml-4 p-2'>
+                  <li>
+                    Preparation and compilation of IFRS and GRAP compliant
+                    financial statements
+                  </li>
+                  <li>
+                    Review of financial statements for compliance with IFRS and
+                    GRAP standards
+                  </li>
+                  <li>
+                    Preparation and maintenance of IFRS and GRAP compliant asset
+                    register
+                  </li>
+                  <li>IFRS and GRAP technical training</li>
+                </ul>
+              </li>
+              <li>
+                <span className='text-xl font-bold'>
+                  Internal audit service
+                </span>
+              </li>
+            </ul>
+          </p>
         </div>
       </motion.div>
     </section>
   );
 }
-
