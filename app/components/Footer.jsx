@@ -35,6 +35,9 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
+                          <li>
+                <Link href="/about-developer" className="hover:text-current transition-colors">About the developer</Link>
+              </li>
             </ul>
           </div>
           <div>

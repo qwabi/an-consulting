@@ -8,58 +8,66 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AN Consulting - Your Partner in Financial Excellence",
-  description:
-    "AN Consulting provides expert accounting, audit, tax, and advisory services for small businesses in South Africa.",
+  metadataBase: new URL("https://www.anconsulting.co.za"),
+  title: {
+    default: "AN Consulting | Financial Records Management And Consulting Website",
+    template: "%s | AN Consulting",
+  },
+  description: "AN Consulting provides accounting, tax, audit, and financial advisory services for South African businesses.",
   keywords: [
-    "accounting",
-    "audit",
-    "tax services",
-    "financial advisory",
-    "small business consulting",
-    "South Africa",
-  ],
-  authors: [{ name: "Ayabonga Qwabi", url: "http://ayabonga.com" }],
+    "AN Consulting",
+    "accounting services South Africa",
+    "tax consulting",
+    "audit services",
+    "financial advisory"
+],
+  authors: [{ name: "AN Consulting" }],
+  creator: "AN Consulting",
+  publisher: "AN Consulting",
+  alternates: {
+    canonical: "https://www.anconsulting.co.za",
+  },
   openGraph: {
-    title: "AN Consulting - Your Partner in Financial Excellence",
-    description:
-      "AN Consulting provides expert accounting, audit, tax, and advisory services for small businesses in South Africa.",
-    url: "http://anconsulting.co.za",
-    type: "website",
-    locale: "en_ZA", // Locale for South Africa
+    type: 'website',
+    locale: 'en_ZA',
+    url: "https://www.anconsulting.co.za",
     siteName: "AN Consulting",
+    title: "AN Consulting | Financial Records Management And Consulting Website",
+    description: "AN Consulting provides accounting, tax, audit, and financial advisory services for South African businesses.",
     images: [
       {
-        url: "http://anconsulting.co.za/logo/1.jpg",
-        alt: "AN Consulting Logo",
-        width: 1200, // Standard OG dimensions
+        url: '/og-image.jpg',
+        width: 1200,
         height: 630,
+        alt: "AN Consulting social preview",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image", // Ensures the large image preview is used
-    title: "AN Consulting - Your Partner in Financial Excellence",
-    description:
-      "AN Consulting provides expert accounting, audit, tax, and advisory services for small businesses in South Africa.",
-    images: ["http://anconsulting.co.za/logo/1.jpg"],
-    creator: "@anconsulting", // Replace with the actual Twitter handle
+    card: 'summary_large_image',
+    title: "AN Consulting",
+    description: "AN Consulting provides accounting, tax, audit, and financial advisory services for South African businesses.",
+    images: ['/og-image.jpg'],
   },
-  metadataBase: new URL("http://anconsulting.co.za"), // Ensures proper URL base resolution
   robots: {
-    index: true, // Allow search engines to index the page
-    follow: true, // Allow following of links on the page
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
-  alternates: {
-    canonical: "http://anconsulting.co.za",
-  },
-};
+  manifest: '/manifest.json',
+}
 
+export default function RootLayout({
 
-export default function RootLayout({ children }) {
+ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-[#233142] text-[#7591a0]`}>
+    <html lang="en-ZA" className="scroll-smooth"><body className={`${inter.className} bg-[#233142] text-[#7591a0]`}>
         <PackageProvider>
           <AnimatePresence>
             {children}

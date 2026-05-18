@@ -1,0 +1,30 @@
+{
+  "name": "AN Consulting",
+  "short_name": "AN",
+  "description": "AN Consulting provides accounting, tax, audit, and financial advisory services for South African businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111827",
+  "lang": "en-ZA",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact",
+      "url": "/contact",
+      "description": "Contact AN Consulting"
+    },
+    {
+      "name": "About the developer",
+      "url": "/about-developer",
+      "description": "Learn about Ayabonga Qwabi"
+    }
+  ]
+}
